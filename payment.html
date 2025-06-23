@@ -22,6 +22,23 @@
       font-weight: bold;
       text-align: center;
     }
+    .upi-copy {
+      background: #222;
+      padding: 10px;
+      border-radius: 5px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #fff;
+    }
+    .upi-copy button {
+      background: #ff2c57;
+      color: #fff;
+      border: none;
+      padding: 6px 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
   </style>
   <script>
     function showSummary() {
@@ -30,19 +47,30 @@
       const plan = url.searchParams.get('plan') || 'Unknown Plan';
       const price = url.searchParams.get('price') || '0';
       const orderId = 'MY' + Math.floor(Math.random() * 1000000);
+      localStorage.setItem('mryogi_order_id', orderId);
 
       document.getElementById('summary').innerHTML = `
         <p><strong>Name:</strong> <span class="highlight">${name}</span></p>
         <p><strong>Plan:</strong> ${plan}</p>
         <p><strong>Price:</strong> ₹${price}</p>
         <p><strong>Order ID:</strong> <span class="highlight">${orderId}</span></p>
-        <p>Please pay <strong>₹${price}</strong> to <span class="highlight">mryogipremium@ybl</span> via UPI.</p>
-        <p>After payment, please send a <strong>screenshot</strong> with your name and order ID to our WhatsApp.</p>
+        <div class="upi-copy">
+          <span id="upi-text">mryogipremium@ybl</span>
+          <button onclick="copyUPI()">Copy</button>
+        </div>
+        <p>Please send a screenshot with your name and order ID to our WhatsApp after payment.</p>
         <a class="whatsapp-btn" target="_blank"
            href="https://wa.me/8618388937?text=Hi%20MR%20YOGI%2C%20I%20have%20paid%20for%20${encodeURIComponent(plan)}%20(₹${price})%20-%20Order%20ID%3A%20${orderId}%20-%20Name%3A%20${encodeURIComponent(name)}">
           📩 Send Screenshot on WhatsApp
         </a>
       `;
+    }
+
+    function copyUPI() {
+      const upi = document.getElementById("upi-text").textContent;
+      navigator.clipboard.writeText(upi).then(() => {
+        alert("UPI ID copied to clipboard!");
+      });
     }
 
     window.onload = showSummary;
