@@ -1,4 +1,5 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -8,102 +9,116 @@
     body {
       margin: 0;
       font-family: 'Poppins', sans-serif;
-      background-color: #000;
+      background-color: #0d0d0d;
       color: #fff;
     }
     header {
-      background-color: #111;
-      padding: 15px 0;
+      background-color: #1a1a1a;
+      padding: 20px;
       text-align: center;
-      border-bottom: 2px solid #222;
+      border-bottom: 2px solid #333;
     }
     header h1 {
       margin: 0;
-      color: #e50914;
-      font-size: 26px;
+      color: #ff3b3f;
     }
     .container {
-      width: 90%;
-      max-width: 1100px;
-      margin: 30px auto;
-    }
-    .card-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-    .card {
-      background-color: #1c1c1c;
       padding: 20px;
-      border-radius: 8px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .plan-card {
+      background-color: #1c1c1c;
       border: 1px solid #333;
-      box-shadow: 0 0 10px rgba(255, 0, 0, 0.1);
-      transition: transform 0.2s;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      padding: 20px;
     }
-    .card:hover {
-      transform: translateY(-4px);
+    .plan-card h2 {
+      color: #ff3b3f;
     }
-    .card h3 {
-      margin: 0 0 10px;
+    .plan-card ul {
+      padding-left: 20px;
+    }
+    .plan-card ul li {
+      margin-bottom: 8px;
+    }
+    .price {
       font-size: 18px;
-      color: #ff4e4e;
+      font-weight: bold;
+      margin-top: 10px;
     }
-    .card p {
-      margin: 0 0 10px;
-      color: #ccc;
-      font-size: 14px;
-    }
-    .card a {
+    .buy-btn {
+      margin-top: 15px;
       display: inline-block;
+      background-color: #ff3b3f;
+      color: white;
+      padding: 10px 20px;
       text-decoration: none;
-      background-color: #e50914;
-      color: #fff;
-      padding: 8px 16px;
-      border-radius: 4px;
-      font-weight: 600;
-      transition: background-color 0.3s;
-    }
-    .card a:hover {
-      background-color: #ff1a1a;
+      border-radius: 5px;
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Netflix Subscription Plans – MR YOGI</h1>
-  </header>  <div class="container">
-    <div class="card-grid">
-      <div class="card">
-        <h3>Netflix Private (1 Month)</h3>
-        <p>Experience Netflix in 4K Ultra HD with a fully private profile protected by a PIN. Ideal for a single user.</p>
-        <p><strong>₹179</strong> (Original: ₹649)</p>
-        <a href="contact.html?plan=Netflix%20Private%201M&price=179">Buy Now</a>
-      </div>
-      <div class="card">
-        <h3>Netflix Shared (1 Month)</h3>
-        <p>Access Netflix using a shared premium account. Great for budget-conscious users wanting short-term access.</p>
-        <p><strong>₹129</strong></p>
-        <a href="contact.html?plan=Netflix%20Shared%201M&price=129">Buy Now</a>
-      </div>
-      <div class="card">
-        <h3>Netflix Shared (3 Months)</h3>
-        <p>Enjoy 3 months of uninterrupted Netflix streaming through a shared subscription. Watch on multiple devices.</p>
-        <p><strong>₹359</strong></p>
-        <a href="contact.html?plan=Netflix%20Shared%203M&price=359">Buy Now</a>
-      </div>
-      <div class="card">
-        <h3>Netflix Shared (6 Months)</h3>
-        <p>Half-year plan giving shared access to Netflix. Stream movies and series in HD quality at an affordable price.</p>
-        <p><strong>₹649</strong></p>
-        <a href="contact.html?plan=Netflix%20Shared%206M&price=649">Buy Now</a>
-      </div>
-      <div class="card">
-        <h3>Netflix Shared (12 Months)</h3>
-        <p>1-year Netflix plan via shared profile. Best value for binge-watchers looking for consistent streaming.</p>
-        <p><strong>₹999</strong></p>
-        <a href="contact.html?plan=Netflix%20Shared%2012M&price=999">Buy Now</a>
-      </div>
+    <h1>Netflix Plans</h1>
+  </header>
+  <div class="container">
+
+    <div class="plan-card">
+      <h2>1 Month – Private (4K UHD)</h2>
+      <ul>
+        <li>4K Ultra HD Quality</li>
+        <li>Private Profile with PIN</li>
+        <li>No Ads</li>
+        <li>Multiple Device Support</li>
+      </ul>
+      <div class="price">₹179</div>
+      <a href="contact.html?plan=Netflix Private 1M&price=179" class="buy-btn">Buy Now</a>
     </div>
+
+    <div class="plan-card">
+      <h2>1 Month – Shared</h2>
+      <ul>
+        <li>HD Streaming</li>
+        <li>Shared Access</li>
+        <li>Single Device Only</li>
+      </ul>
+      <div class="price">₹129</div>
+      <a href="contact.html?plan=Netflix Shared 1M&price=129" class="buy-btn">Buy Now</a>
+    </div>
+
+    <div class="plan-card">
+      <h2>3 Months – Shared</h2>
+      <ul>
+        <li>Shared Streaming</li>
+        <li>1 Device</li>
+      </ul>
+      <div class="price">₹359</div>
+      <a href="contact.html?plan=Netflix Shared 3M&price=359" class="buy-btn">Buy Now</a>
+    </div>
+
+    <div class="plan-card">
+      <h2>6 Months – Shared</h2>
+      <ul>
+        <li>Shared Streaming</li>
+        <li>1 Device</li>
+      </ul>
+      <div class="price">₹649</div>
+      <a href="contact.html?plan=Netflix Shared 6M&price=649" class="buy-btn">Buy Now</a>
+    </div>
+
+    <div class="plan-card">
+      <h2>12 Months – Shared</h2>
+      <ul>
+        <li>Shared Streaming</li>
+        <li>1 Device</li>
+      </ul>
+      <div class="price">₹999</div>
+      <a href="contact.html?plan=Netflix Shared 12M&price=999" class="buy-btn">Buy Now</a>
+    </div>
+
   </div>
 </body>
-</html>
+  </html>
