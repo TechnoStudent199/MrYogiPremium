@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Pricing - mryogi</title>
+  <title>Plans – mryogi Premium Subscriptions</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
   <style>
     body {
@@ -12,113 +12,144 @@
       background-color: #000;
       color: #fff;
     }
+    header {
+      background-color: #111;
+      padding: 15px 0;
+      text-align: center;
+      border-bottom: 2px solid #222;
+    }
+    header h1 {
+      margin: 0;
+      color: #ff2c57;
+      font-size: 24px;
+    }
     .container {
       width: 95%;
       max-width: 1200px;
-      margin: 40px auto;
-      padding: 20px;
+      margin: 30px auto;
+      padding: 0 10px;
     }
-    h2 {
-      color: #ff2c57;
-      text-align: center;
-      margin-bottom: 30px;
+    .section {
+      margin-bottom: 40px;
     }
-    .grid {
+    .section h2 {
+      color: #00e6e6;
+      font-size: 20px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid #333;
+      padding-bottom: 5px;
+    }
+    .cards {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
       gap: 20px;
     }
     .card {
-      background-color: #111;
-      border: 1px solid #333;
-      border-radius: 10px;
-      padding: 20px;
       position: relative;
-      box-shadow: 0 0 10px rgba(255, 44, 87, 0.3);
+      background-color: #1a1a1a;
+      border: 1px solid #222;
+      border-radius: 8px;
+      padding: 18px;
+      box-shadow: 0 2px 8px rgba(255, 44, 87, 0.2);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 4px 12px rgba(255, 44, 87, 0.3);
     }
     .card h3 {
-      color: #fff;
-      margin-bottom: 10px;
-      font-size: 18px;
+      margin: 0 0 8px;
+      font-size: 17px;
+      color: #ffdcdc;
     }
     .card p {
-      font-size: 14px;
-      margin: 8px 0;
+      margin: 0 0 12px;
+      font-size: 15px;
+      color: #ccc;
     }
     .card a {
       display: inline-block;
-      margin-top: 10px;
-      background-color: #ff2c57;
-      color: white;
-      padding: 8px 16px;
-      border-radius: 5px;
       text-decoration: none;
+      background-color: #ff2c57;
+      color: #fff;
+      padding: 8px 16px;
+      border-radius: 4px;
       font-size: 14px;
-      font-weight: bold;
+      font-weight: 600;
+      transition: background-color 0.2s;
     }
-    .category-label {
-      font-size: 20px;
-      color: #00e6e6;
-      margin: 30px 0 10px;
-      text-align: left;
+    .card a:hover {
+      background-color: #ff456e;
     }
   </style>
 </head>
 <body>
+  <header>
+    <h1>Subscription Plans</h1>
+  </header>
+
   <div class="container">
-    <h2>OTT & Creative Subscription Plans</h2>
 
-    <div class="category-label">📺 OTT Platforms</div>
-    <div class="grid">
-      <div class="card"><h3>Amazon Prime With Shopping</h3><p>₹150</p><a href="contact.html?plan=Amazon Prime With Shopping&price=150">Buy Now</a></div>
-      <div class="card"><h3>Amazon Prime 4K - 5 Screens</h3><p>₹99</p><a href="contact.html?plan=Amazon Prime 4K 5 Screens&price=99">Buy Now</a></div>
-      <div class="card"><h3>Amazon Prime 1 Month - 1 Screen</h3><p>₹49</p><a href="contact.html?plan=Amazon Prime 1M 1 Screen&price=49">Buy Now</a></div>
-      <div class="card"><h3>Amazon Prime 3 Months - 1 Screen</h3><p>₹129</p><a href="contact.html?plan=Amazon Prime 3M 1 Screen&price=129">Buy Now</a></div>
-      <div class="card"><h3>Amazon Prime 6 Months - 5 Screens</h3><p>₹299</p><a href="contact.html?plan=Amazon Prime 6M 5 Screens&price=299">Buy Now</a></div>
-      <div class="card"><h3>Amazon Prime 12 Months - 1 Screen</h3><p>₹320</p><a href="contact.html?plan=Amazon Prime 12M 1 Screen&price=320">Buy Now</a></div>
+    <div class="section">
+      <h2>OTT Platforms</h2>
+      <div class="cards">
+        <!-- Amazon Prime -->
+        <div class="card"><h3>Amazon Prime With Shopping</h3><p>₹150</p><a href="contact.html?plan=Amazon Prime With Shopping&price=150">Buy Now</a></div>
+        <div class="card"><h3>Amazon Prime 4K – 5 Screens</h3><p>₹99</p><a href="contact.html?plan=Amazon Prime 4K 5 Screens&price=99">Buy Now</a></div>
+        <div class="card"><h3>Amazon Prime 1M – 1 Screen</h3><p>₹49</p><a href="contact.html?plan=Amazon Prime 1M 1 Screen&price=49">Buy Now</a></div>
+        <div class="card"><h3>Amazon Prime 3M – 1 Screen</h3><p>₹129</p><a href="contact.html?plan=Amazon Prime 3M 1 Screen&price=129">Buy Now</a></div>
+        <div class="card"><h3>Amazon Prime 6M – 5 Screens</h3><p>₹299</p><a href="contact.html?plan=Amazon Prime 6M 5 Screens&price=299">Buy Now</a></div>
+        <div class="card"><h3>Amazon Prime 12M – 1 Screen</h3><p>₹320</p><a href="contact.html?plan=Amazon Prime 12M 1 Screen&price=320">Buy Now</a></div>
 
-      <div class="card"><h3>Hotstar 1M</h3><p>₹39</p><a href="contact.html?plan=Hotstar 1M&price=39">Buy Now</a></div>
-      <div class="card"><h3>Hotstar 2M</h3><p>₹75</p><a href="contact.html?plan=Hotstar 2M&price=75">Buy Now</a></div>
-      <div class="card"><h3>Hotstar 3M</h3><p>₹110</p><a href="contact.html?plan=Hotstar 3M&price=110">Buy Now</a></div>
-      <div class="card"><h3>Hotstar 6M</h3><p>₹220</p><a href="contact.html?plan=Hotstar 6M&price=220">Buy Now</a></div>
-      <div class="card"><h3>Hotstar 12M</h3><p>₹359</p><a href="contact.html?plan=Hotstar 12M&price=359">Buy Now</a></div>
-      <div class="card"><h3>Hotstar 1M on Your Number</h3><p>₹79</p><a href="contact.html?plan=Hotstar 1M Your Number&price=79">Buy Now</a></div>
+        <!-- Hotstar -->
+        <div class="card"><h3>Hotstar 1M</h3><p>₹39</p><a href="contact.html?plan=Hotstar 1M&price=39">Buy Now</a></div>
+        <div class="card"><h3>Hotstar 2M</h3><p>₹75</p><a href="contact.html?plan=Hotstar 2M&price=75">Buy Now</a></div>
+        <div class="card"><h3>Hotstar 3M</h3><p>₹110</p><a href="contact.html?plan=Hotstar 3M&price=110">Buy Now</a></div>
+        <div class="card"><h3>Hotstar 6M</h3><p>₹220</p><a href="contact.html?plan=Hotstar 6M&price=220">Buy Now</a></div>
+        <div class="card"><h3>Hotstar 12M</h3><p>₹359</p><a href="contact.html?plan=Hotstar 12M&price=359">Buy Now</a></div>
+        <div class="card"><h3>Hotstar 1M on Your Number</h3><p>₹79</p><a href="contact.html?plan=Hotstar 1M Your Number&price=79">Buy Now</a></div>
 
-      <div class="card"><h3>ZEE5 1M</h3><p>₹49</p><a href="contact.html?plan=ZEE5 1M&price=49">Buy Now</a></div>
-      <div class="card"><h3>ZEE5 3M</h3><p>₹129</p><a href="contact.html?plan=ZEE5 3M&price=129">Buy Now</a></div>
-      <div class="card"><h3>ZEE5 6M</h3><p>₹169</p><a href="contact.html?plan=ZEE5 6M&price=169">Buy Now</a></div>
-      <div class="card"><h3>ZEE5 12M</h3><p>₹240</p><a href="contact.html?plan=ZEE5 12M&price=240">Buy Now</a></div>
-      <div class="card"><h3>ZEE5 12M on Your Number</h3><p>₹399</p><a href="contact.html?plan=ZEE5 12M Your Number&price=399">Buy Now</a></div>
+        <!-- ZEE5 -->
+        <div class="card"><h3>ZEE5 1M</h3><p>₹49</p><a href="contact.html?plan=ZEE5 1M&price=49">Buy Now</a></div>
+        <div class="card"><h3>ZEE5 3M</h3><p>₹129</p><a href="contact.html?plan=ZEE5 3M&price=129">Buy Now</a></div>
+        <div class="card"><h3>ZEE5 6M</h3><p>₹169</p><a href="contact.html?plan=ZEE5 6M&price=169">Buy Now</a></div>
+        <div class="card"><h3>ZEE5 12M</h3><p>₹240</p><a href="contact.html?plan=ZEE5 12M&price=240">Buy Now</a></div>
+        <div class="card"><h3>ZEE5 12M on Number (1080p)</h3><p>₹399</p><a href="contact.html?plan=ZEE5 12M Your Number&price=399">Buy Now</a></div>
 
-      <div class="card"><h3>2-in-1 Combo (Amazon + Hotstar)</h3><p>₹140</p><a href="contact.html?plan=Combo 1M&price=140">Buy Now</a></div>
+        <!-- Combo -->
+        <div class="card"><h3>2-in-1 Combo (Prime + Hotstar) 1M</h3><p>₹140</p><a href="contact.html?plan=Combo 1M&price=140">Buy Now</a></div>
 
-      <div class="card"><h3>SONYLiv 1M</h3><p>₹49</p><a href="contact.html?plan=SonyLIV 1M&price=49">Buy Now</a></div>
-      <div class="card"><h3>SONYLiv 3M</h3><p>₹169</p><a href="contact.html?plan=SonyLIV 3M&price=169">Buy Now</a></div>
-      <div class="card"><h3>SONYLiv 6M</h3><p>₹259</p><a href="contact.html?plan=SonyLIV 6M&price=259">Buy Now</a></div>
-      <div class="card"><h3>SONYLiv 12M</h3><p>₹299</p><a href="contact.html?plan=SonyLIV 12M&price=299">Buy Now</a></div>
-      <div class="card"><h3>SONYLiv 12M Your Number</h3><p>₹499</p><a href="contact.html?plan=SonyLIV 12M Your Number&price=499">Buy Now</a></div>
+        <!-- SONYLIV -->
+        <div class="card"><h3>SONYLiv 1M</h3><p>₹49</p><a href="contact.html?plan=SonyLIV 1M&price=49">Buy Now</a></div>
+        <div class="card"><h3>SONYLiv 3M</h3><p>₹169</p><a href="contact.html?plan=SonyLIV 3M&price=169">Buy Now</a></div>
+        <div class="card"><h3>SONYLiv 6M</h3><p>₹259</p><a href="contact.html?plan=SonyLIV 6M&price=259">Buy Now</a></div>
+        <div class="card"><h3>SONYLiv 12M</h3><p>₹299</p><a href="contact.html?plan=SonyLIV 12M&price=299">Buy Now</a></div>
+        <div class="card"><h3>SONYLiv 12M Your Number</h3><p>₹499</p><a href="contact.html?plan=SonyLIV 12M Your Number&price=499">Buy Now</a></div>
 
-      <div class="card"><h3>Netflix Private 1M</h3><p>₹179</p><a href="contact.html?plan=Netflix Private 1M&price=179">Buy Now</a></div>
-      <div class="card"><h3>Netflix Shared 1M</h3><p>₹129</p><a href="contact.html?plan=Netflix Shared 1M&price=129">Buy Now</a></div>
-      <div class="card"><h3>Netflix Shared 3M</h3><p>₹359</p><a href="contact.html?plan=Netflix Shared 3M&price=359">Buy Now</a></div>
-      <div class="card"><h3>Netflix Shared 6M</h3><p>₹649</p><a href="contact.html?plan=Netflix Shared 6M&price=649">Buy Now</a></div>
-      <div class="card"><h3>Netflix Shared 12M</h3><p>₹999</p><a href="contact.html?plan=Netflix Shared 12M&price=999">Buy Now</a></div>
+        <!-- Netflix -->
+        <div class="card"><h3>Netflix Private 1M</h3><p>₹179</p><a href="contact.html?plan=Netflix Private 1M&price=179">Buy Now</a></div>
+        <div class="card"><h3>Netflix Shared 1M</h3><p>₹129</p><a href="contact.html?plan=Netflix Shared 1M&price=129">Buy Now</a></div>
+        <div class="card"><h3>Netflix Shared 3M</h3><p>₹359</p><a href="contact.html?plan=Netflix Shared 3M&price=359">Buy Now</a></div>
+        <div class="card"><h3>Netflix Shared 6M</h3><p>₹649</p><a href="contact.html?plan=Netflix Shared 6M&price=649">Buy Now</a></div>
+        <div class="card"><h3>Netflix Shared 12M</h3><p>₹999</p><a href="contact.html?plan=Netflix Shared 12M&price=999">Buy Now</a></div>
+      </div>
     </div>
 
-    <div class="category-label">🎨 Creative & Music Plans</div>
-    <div class="grid">
-      <div class="card"><h3>YouTube Premium 1M</h3><p>₹39</p><a href="contact.html?plan=YouTube 1M&price=39">Buy Now</a></div>
-      <div class="card"><h3>YouTube Premium 2M</h3><p>₹79</p><a href="contact.html?plan=YouTube 2M&price=79">Buy Now</a></div>
-      <div class="card"><h3>YouTube Premium 3M</h3><p>₹160</p><a href="contact.html?plan=YouTube 3M&price=160">Buy Now</a></div>
-      <div class="card"><h3>YouTube Premium 6M</h3><p>₹320</p><a href="contact.html?plan=YouTube 6M&price=320">Buy Now</a></div>
-      <div class="card"><h3>YouTube Premium 12M</h3><p>₹550</p><a href="contact.html?plan=YouTube 12M&price=550">Buy Now</a></div>
+    <div class="section">
+      <h2>🎶 Music & Creative</h2>
+      <div class="cards">
+        <div class="card"><h3>YouTube Premium 1M</h3><p>₹39</p><a href="contact.html?plan=YouTube Premium 1M&price=39">Buy Now</a></div>
+        <div class="card"><h3>YouTube Premium 2M</h3><p>₹79</p><a href="contact.html?plan=YouTube Premium 2M&price=79">Buy Now</a></div>
+        <div class="card"><h3>YouTube Premium 3M</h3><p>₹160</p><a href="contact.html?plan=YouTube Premium 3M&price=160">Buy Now</a></div>
+        <div class="card"><h3>YouTube Premium 6M</h3><p>₹320</p><a href="contact.html?plan=YouTube Premium 6M&price=320">Buy Now</a></div>
+        <div class="card"><h3>YouTube Premium 12M</h3><p>₹550</p><a href="contact.html?plan=YouTube Premium 12M&price=550">Buy Now</a></div>
 
-      <div class="card"><h3>Adobe Creative Cloud (1 Year)</h3><p>₹3599</p><a href="contact.html?plan=Adobe Creative Cloud&price=3599">Buy Now</a></div>
-
-      <div class="card"><h3>Canva Pro (1 Year EDU)</h3><p>₹299</p><a href="contact.html?plan=Canva Pro EDU&price=299">Buy Now</a></div>
-
-      <div class="card"><h3>Spotify Premium 2M</h3><p>₹79</p><a href="contact.html?plan=Spotify 2M&price=79">Buy Now</a></div>
+        <div class="card"><h3>Adobe Creative Cloud 1Y</h3><p>₹3599</p><a href="contact.html?plan=Adobe Creative Cloud 1Y&price=3599">Buy Now</a></div>
+        <div class="card"><h3>Canva Pro EDU 1Y</h3><p>₹299</p><a href="contact.html?plan=Canva Pro EDU 1Y&price=299">Buy Now</a></div>
+        <div class="card"><h3>Spotify Premium 2M</h3><p>₹79</p><a href="contact.html?plan=Spotify Premium 2M&price=79">Buy Now</a></div>
+      </div>
     </div>
+
   </div>
 </body>
-        </html>
+          </html>
