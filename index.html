@@ -21,15 +21,40 @@
     .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; }
     .feature-box { background-color: #1b1b1b; padding: 20px; border-radius: 8px; text-align: center; }
     .footer { background-color: #000; text-align: center; padding: 20px 0; font-size: 14px; }
-    .msme-note { text-align: center; font-size: 24px; color: #ff2c57; margin-top: 40px; }
-    .msme-link { color: #ff2c57; font-size: 20px; text-decoration: none; }
-    .msme-link:hover { text-decoration: underline; }
+    
+    /* Add logo styles */
+    .header-logo {
+      width: 200px;
+      height: auto;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* Add WhatsApp button styles */
+    .whatsapp-btn {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      background-color: #25D366;
+      border-radius: 50%;
+      padding: 10px;
+      font-size: 24px;
+      color: #fff;
+      text-decoration: none;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    }
+
+    .whatsapp-btn:hover {
+      background-color: #128C7E;
+    }
   </style>
 </head>
 <body>
   <header class="navbar">
     <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
-      <h1 class="logo">mr.yogi</h1>
+      <!-- Add the logo here -->
+      <img src="logo.png" alt="mryogi Logo" class="header-logo" />
+      <h1 class="logo">mryogi</h1>
       <nav>
         <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
@@ -39,20 +64,13 @@
       </nav>
     </div>
   </header>
-
   <section class="hero">
     <div class="container">
-      <h2>Welcome to mr.yogi Premium Subscriptions</h2>
+      <h2>Welcome to mryogi Premium Subscriptions</h2>
       <p>OTT • Music • Creative • Combo Deals – All in One Place</p>
-      <a href="pricing.html" class="btn">👉View Plans👈</a>
+      <a href="pricing.html" class="btn">View Plans</a>
     </div>
   </section>
-
-  <section class="msme-note">
-    <p><strong>We Are MSME Government Verified Seller!</strong></p>
-    <p><a href="certificate.html" class="msme-link">See Our Certificate</a></p>
-  </section>
-
   <section class="features">
     <div class="container">
       <h3>Why Choose Us?</h3>
@@ -63,12 +81,17 @@
       </div>
     </div>
   </section>
-
   <footer class="footer">
     <div class="container">
       <p>&copy; 2025 mryogi Premium Subscriptions. All rights reserved.</p>
     </div>
   </footer>
 
+  <!-- WhatsApp Button -->
+  <a href="https://wa.me/8618388937" class="whatsapp-btn">
+    <i class="fab fa-whatsapp"></i> <!-- This is for WhatsApp icon, if you have Font Awesome -->
+    📲
+  </a>
+
 </body>
-         </html>
+</html>
