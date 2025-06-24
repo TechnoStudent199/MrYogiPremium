@@ -6,11 +6,33 @@
   <title>Payment - mryogi</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
   <style>
-    body { background-color: #000; color: #fff; font-family: 'Poppins', sans-serif; padding: 30px; }
-    .summary-box { max-width: 600px; margin: auto; background: #111; padding: 25px; border-radius: 10px; }
-    h2 { color: #ff2c57; text-align: center; margin-bottom: 20px; }
-    .summary-box p { margin-bottom: 15px; font-size: 16px; }
-    .highlight { color: #ff2c57; font-weight: bold; }
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: 'Poppins', sans-serif;
+      padding: 30px;
+    }
+    .summary-box {
+      max-width: 600px;
+      margin: auto;
+      background: #111;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(255, 44, 87, 0.2);
+    }
+    h2 {
+      color: #ff2c57;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .summary-box p {
+      margin-bottom: 15px;
+      font-size: 16px;
+    }
+    .highlight {
+      color: #ff2c57;
+      font-weight: bold;
+    }
     a.whatsapp-btn {
       display: inline-block;
       margin-top: 20px;
@@ -38,6 +60,15 @@
       padding: 6px 10px;
       border-radius: 5px;
       cursor: pointer;
+    }
+    .qr-image {
+      display: block;
+      margin: 0 auto 20px;
+      width: 100%;
+      max-width: 300px;
+      border-radius: 10px;
+      border: 2px solid #333;
+      box-shadow: 0 0 12px rgba(255, 44, 87, 0.3);
     }
   </style>
   <script>
@@ -79,6 +110,11 @@
 <body>
   <div class="summary-box">
     <h2>Complete Your Payment</h2>
+
+    <!-- QR Code Image -->
+    <img src="phonepe_qr.jpg" alt="Scan to Pay with PhonePe" class="qr-image"/>
+
+    <!-- Dynamic Summary -->
     <div id="summary"></div>
   </div>
 </body>
