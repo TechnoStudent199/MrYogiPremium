@@ -9,10 +9,9 @@
     body { margin: 0; font-family: 'Poppins', sans-serif; background-color: #000; color: #fff; }
     .navbar { background-color: #111; padding: 20px 0; box-shadow: 0 2px 10px rgba(0,0,0,0.8); }
     .container { width: 90%; max-width: 1200px; margin: 0 auto; }
-    .logo { color: #fff; font-size: 28px; font-weight: 600; }
     nav ul { list-style: none; padding: 0; display: flex; gap: 20px; }
     nav a { color: #fff; text-decoration: none; font-weight: 500; }
-    .hero { background: #111; padding: 100px 0; text-align: center; }
+    .hero { background: #111 url('https://godspeedottstore.netlify.app/static/media/banner.6eead5ac33944dbb839d.jpg') no-repeat center/cover; padding: 100px 0; text-align: center; }
     .hero h2 { font-size: 42px; margin-bottom: 10px; }
     .hero p { font-size: 20px; margin-bottom: 20px; }
     .btn { background-color: #ff2c57; color: #fff; padding: 12px 30px; border-radius: 5px; text-decoration: none; font-weight: bold; }
@@ -21,8 +20,19 @@
     .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; }
     .feature-box { background-color: #1b1b1b; padding: 20px; border-radius: 8px; text-align: center; }
     .footer { background-color: #000; text-align: center; padding: 20px 0; font-size: 14px; }
-    .msme-note { font-size: 22px; text-align: center; color: #ff2c57; margin-top: 50px; }
-    .msme-note a { color: #ff2c57; text-decoration: underline; }
+    .msme-note {
+      text-align: center;
+      background-color: #00e6e6;
+      color: #000;
+      padding: 15px;
+      margin: 20px 0;
+      font-size: 18px;
+      font-weight: 600;
+    }
+    .feature-box img {
+      max-width: 50px;
+      margin-bottom: 15px;
+    }
   </style>
 </head>
 <body>
@@ -39,6 +49,10 @@
     </div>
   </header>
 
+  <section class="msme-note">
+    <p><strong>We are an MSME Government Verified Seller</strong> – <a href="certificate.html" style="color: #000; text-decoration: underline;">Click here to view our MSME Certificate</a></p>
+  </section>
+
   <section class="hero">
     <div class="container">
       <h2>Welcome to mryogi Premium Subscriptions</h2>
@@ -47,19 +61,31 @@
     </div>
   </section>
 
-  <!-- MSME Note Section -->
-  <section class="msme-note">
-    <p><strong>We are a Government of India verified MSME seller!</strong></p>
-    <p><a href="udyam-certificate.jpg" target="_blank">Click here to see our MSME Certificate</a></p>
-  </section>
-
   <section class="features">
     <div class="container">
       <h3>Why Choose Us?</h3>
       <div class="features-grid">
-        <div class="feature-box"><h4>HD/4K Content</h4><p>Stream high-quality content on all devices.</p></div>
-        <div class="feature-box"><h4>Affordable Prices</h4><p>Plans starting at just ₹39!</p></div>
-        <div class="feature-box"><h4>Instant Activation</h4><p>Delivered quickly on your mail or phone.</p></div>
+        <div class="feature-box">
+          <img src="https://example.com/hd4k-icon.png" alt="HD/4K Content" />
+          <h4>HD/4K Content</h4>
+          <p>Stream high-quality content on all devices.</p>
+        </div>
+        <div class="feature-box">
+          <img src="https://example.com/price-icon.png" alt="Affordable Prices" />
+          <h4>Affordable Prices</h4>
+          <p>Plans starting at just ₹39!</p>
+        </div>
+        <div class="feature-box">
+          <img src="https://example.com/activation-icon.png" alt="Instant Activation" />
+          <h4>Instant Activation</h4>
+          <p>Delivered quickly on your mail or phone.</p>
+        </div>
+        <!-- New 24/7 Support Feature -->
+        <div class="feature-box">
+          <img src="https://example.com/24-7-support-icon.png" alt="24/7 Support" />
+          <h4>24/7 Support</h4>
+          <p>We're here to help you anytime, day or night!</p>
+        </div>
       </div>
     </div>
   </section>
@@ -69,5 +95,6 @@
       <p>&copy; 2025 mryogi Premium Subscriptions. All rights reserved.</p>
     </div>
   </footer>
+
 </body>
-        </html>
+          </html>
